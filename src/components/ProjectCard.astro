@@ -1,0 +1,69 @@
+---
+const title = Astro.props.title;
+const authorList = Astro.props.authorList;
+const linkList = Astro.props.linkList;
+const proceedings = Astro.props.proceedings;
+---
+
+<article
+  style={{
+    backgroundImage: "radial-gradient(circle, #6c6c6c1d 0%, transparent 100%)",
+  }}
+  class="border border-zinc-300 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-900 bg-opacity-40 p-8 rounded-lg flex flex-col-reverse md:flex-row justify-between mb-7 shadow-xl"
+>
+  <div>
+    <!-- paper title -->
+    <div class="text-lg inline-flex items-center gap-2 mb-2">
+      <div class="font-semibold inline-block">{title}</div>
+    </div>
+    <!-- author list -->
+    <div class="text-base inline-flex items-center gap-2 mb-2">
+      {
+        authorList.map(
+          (author: {
+            name: string;
+            link: string | undefined;
+            highlight: string | undefined;
+          }) => (
+            <a
+              href={author.link}
+              target="_blank"
+              class:list={[
+                "hover:opacity-60 transition",
+                { "hover:underline": author.link },
+                author.highlight
+                  ? "text-zinc-900 dark:text-zinc-100"
+                  : "text-zinc-500 dark:text-zinc-400",
+              ]}
+            >
+              {author.name}
+            </a>
+          )
+        )
+      }
+    </div>
+    <!-- conference or journal -->
+    <p class="text-base italic text-pretty pr-2 mb-4">
+      {proceedings}
+    </p>
+    <!-- link list -->
+    <div class="text-base inline-flex items-center gap-2 mb-2">
+      {
+        linkList.map((link: { name: string; link: string }) => (
+          <button class="bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-700 text-zinc-800 dark:text-white font-bold py-0 px-3 border-b-4 border-gray-300 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-900 transition rounded">
+            <a
+              class="text-xs"
+              target="_blank"
+              onclick={`window.open('${link.link}', '_blank')`}
+            >
+              {link.name}
+            </a>
+          </button>
+        ))
+      }
+    </div>
+    <div class="flex items-center gap-3">
+      <slot />
+    </div>
+  </div>
+</article>

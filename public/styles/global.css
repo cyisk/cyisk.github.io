@@ -1,0 +1,17 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', sans-serif;
+    background-color: #f8f8f8;
+    color: #181818;
+}
+
+html.dark body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', sans-serif;
+    background-color: #181818;
+    color: #fff;
+}

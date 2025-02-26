@@ -1,0 +1,76 @@
+---
+import ProjectCard from "@components/ProjectCard.astro";
+---
+
+<section class="my-20">
+  <h2 class="text-2xl font-semibold mb-2">Publications</h2>
+  <hr class="mb-6 border-zinc-600" />
+
+  <ProjectCard
+    title="CIER: A Novel Experience Replay Approach with Causal Inference in Deep Reinforcement Learning"
+    authorList={[
+      {
+        name: "Wang, J.",
+        link: "https://scholar.google.com/citations?user=SIsbRvIAAAAJ",
+      },
+      {
+        name: "Du, D.",
+        link: "https://scholar.google.com/citations?user=9WHLtvoAAAAJ",
+      },
+      {
+        name: "Tian, L.",
+      },
+      {
+        name: "Chen, Y.",
+        link: "https://scholar.google.com/citations?user=QPyjcwoAAAAJ",
+        highlight: true,
+      },
+      {
+        name: "Li, Y.",
+      },
+      {
+        name: "Li, Y.",
+      },
+    ]}
+    proceedings="AAAI 2025 (AI Alignment Track, Oral)"
+    linkList={[
+      {
+        name: "PDF",
+        link: "https://arxiv.org/pdf/2405.08380",
+      },
+    ]}
+  />
+
+  <ProjectCard
+    title="Exogenous Matching: Learning Good Proposals for Tractable Counterfactual Estimation"
+    authorList={[
+      {
+        name: "Chen, Y.",
+        link: "https://scholar.google.com/citations?user=QPyjcwoAAAAJ",
+        highlight: true,
+      },
+      {
+        name: "Du, D.",
+        link: "https://scholar.google.com/citations?user=9WHLtvoAAAAJ",
+      },
+      {
+        name: "Tian, L.",
+      },
+    ]}
+    proceedings="NeurIPS 2024 (Main Track, Poster)"
+    linkList={[
+      {
+        name: "BIB",
+        link: "https://papers.nips.cc/paper_files/paper/25103-/bibtex",
+      },
+      {
+        name: "PDF",
+        link: "https://papers.nips.cc/paper_files/paper/2024/file/ee94bf235482e4c1f689c04c81656dbf-Paper-Conference.pdf",
+      },
+      {
+        name: "CODE",
+        link: "https://github.com/cyisk/exom",
+      },
+    ]}
+  />
+</section>

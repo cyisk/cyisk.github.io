@@ -1,0 +1,25 @@
+---
+import Github from "@assets/icons/ios-github.astro";
+import GoogleScholar from "@assets/icons/ios-google-scholar.astro";
+import Email from "@assets/icons/ios-mail.astro";
+import ThemeToggle from "@components/Button/ThemeToggle.astro";
+import ContainerHover from "@components/Button/ContainerHover.astro";
+---
+
+<nav class="w-full flex justify-between items-center">
+  <span class="text-xl">@cyisk</span>
+  <div class="flex gap-3 items-center">
+    <ContainerHover link="mailto:yikangc620@gmail.com">
+      <Email />
+    </ContainerHover>
+    <ContainerHover
+      link="https://scholar.google.com/citations?user=QPyjcwoAAAAJ"
+    >
+      <GoogleScholar />
+    </ContainerHover>
+    <ContainerHover link="https://github.com/cyisk">
+      <Github />
+    </ContainerHover>
+    <ThemeToggle />
+  </div>
+</nav>
