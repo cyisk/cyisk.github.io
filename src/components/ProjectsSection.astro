@@ -2,9 +2,40 @@
 import ProjectCard from "@components/ProjectCard.astro";
 ---
 
-<section class="my-20">
+<section class="my-10">
   <h2 class="text-2xl font-semibold mb-2">Publications</h2>
   <hr class="mb-6 border-zinc-600" />
+
+  <ProjectCard
+    title="Causal Discovery via Quantile Partial Effect"
+    authorList={[
+      {
+        name: "Chen, Y.",
+        link: "https://scholar.google.com/citations?user=QPyjcwoAAAAJ",
+        highlight: true,
+      },
+      {
+        name: "Sun, X.",
+      },
+      {
+        name: "Du, D.",
+        link: "https://scholar.google.com/citations?user=9WHLtvoAAAAJ",
+      },
+    ]}
+    proceedings="Under review"
+    keywords="causal discovery, functional causal model, quantile partial effect"
+    bannerImage="imgs/projects/arxiv25qpecd.png"
+    linkList={[
+      {
+        name: "PDF",
+        link: "https://arxiv.org/pdf/2509.12981",
+      },
+      {
+        name: "CODE",
+        link: "https://github.com/cyisk/qpe_cd",
+      },
+    ]}
+  />
 
   <ProjectCard
     title="Exogenous Isomorphism for Counterfactual Identifiability"
@@ -20,10 +51,16 @@ import ProjectCard from "@components/ProjectCard.astro";
       },
     ]}
     proceedings="ICML 2025 (Main Track, Spotlight Poster)"
+    keywords="causal inference, counterfactual identifiablity, normalizing flow"
+    bannerImage="imgs/projects/icml25exiso.png"
     linkList={[
       {
+        name: "BIB",
+        link: "https://proceedings.mlr.press/v267/chen25p.html",
+      },
+      {
         name: "PDF",
-        link: "https://arxiv.org/pdf/2505.02212",
+        link: "https://proceedings.mlr.press/v267/chen25p.html",
       },
       {
         name: "CODE",
@@ -33,7 +70,7 @@ import ProjectCard from "@components/ProjectCard.astro";
   />
 
   <ProjectCard
-    title="CIER: A Novel Experience Replay Approach with Causal Inference in Deep Reinforcement Learning"
+    title="ERCI: An Explainable Experience Replay Approach with Causal Inference for Deep Reinforcement Learning"
     authorList={[
       {
         name: "Wang, J.",
@@ -59,10 +96,16 @@ import ProjectCard from "@components/ProjectCard.astro";
       },
     ]}
     proceedings="AAAI 2025 (AI Alignment Track, Oral)"
+    keywords="causal inference, reinforcement learning, experience replay"
+    bannerImage="imgs/projects/aaai25erci.png"
     linkList={[
       {
+        name: "BIB",
+        link: "https://ojs.aaai.org/index.php/AAAI/article/view/34981",
+      },
+      {
         name: "PDF",
-        link: "https://arxiv.org/pdf/2405.08380",
+        link: "https://ojs.aaai.org/index.php/AAAI/article/view/34981",
       },
     ]}
   />
@@ -84,6 +127,8 @@ import ProjectCard from "@components/ProjectCard.astro";
       },
     ]}
     proceedings="NeurIPS 2024 (Main Track, Poster)"
+    keywords="causal inference, counterfactual reasoning, importance sampling"
+    bannerImage="imgs/projects/nips24exom.png"
     linkList={[
       {
         name: "BIB",

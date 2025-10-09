@@ -1,23 +1,30 @@
 ---
 const title = Astro.props.title;
 const authorList = Astro.props.authorList;
-const linkList = Astro.props.linkList;
 const proceedings = Astro.props.proceedings;
+const keywords = Astro.props.keywords;
+const bannerImage = Astro.props.bannerImage;
+const linkList = Astro.props.linkList;
+
+const keywordList = keywords
+  .split(",")
+  .map((s: string) => s.trim())
+  .filter((s: string) => s.length > 0);
 ---
 
 <article
   style={{
     backgroundImage: "radial-gradient(circle, #6c6c6c1d 0%, transparent 100%)",
   }}
-  class="border border-zinc-300 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-900 bg-opacity-40 p-8 rounded-lg flex flex-col-reverse md:flex-row justify-between mb-7 shadow-xl"
+  class="border border-zinc-300 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-900 bg-opacity-40 p-4 rounded-lg flex flex-col-reverse md:flex-row justify-between mb-4 shadow-md"
 >
   <div>
     <!-- paper title -->
-    <div class="text-lg inline-flex items-center gap-2 mb-2">
+    <div class="text-lg items-center gap-2">
       <div class="font-semibold inline-block">{title}</div>
     </div>
     <!-- author list -->
-    <div class="text-base inline-flex items-center gap-2 mb-2">
+    <div class="text-sm items-center gap-2">
       {
         authorList.map(
           (author: {
@@ -32,22 +39,36 @@ const proceedings = Astro.props.proceedings;
                 "hover:opacity-60 transition",
                 { "hover:underline": author.link },
                 author.highlight
-                  ? "text-zinc-900 dark:text-zinc-100"
+                  ? "font-semibold text-zinc-900 dark:text-zinc-100"
                   : "text-zinc-500 dark:text-zinc-400",
               ]}
             >
               {author.name}
             </a>
-          )
+          ),
         )
       }
     </div>
     <!-- conference or journal -->
-    <p class="text-base italic text-pretty pr-2 mb-4">
+    <p class="text-sm italic text-pretty pr-2 mb-1">
       {proceedings}
     </p>
+    <!-- keywords -->
+    <div class="flex flex-wrap gap-x-2 gap-y-1 mb-1">
+      {
+        keywordList.map((keyword: string) => (
+          <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-0.5 rounded-full whitespace-nowrap">
+            {keyword}
+          </span>
+        ))
+      }
+    </div>
+    <!-- banner image -->
+    <div class="rounded-lg overflow-hidden shadow-md mb-2">
+      <img src={bannerImage} class="w-full h-auto max-h-80 object-cover p-2" />
+    </div>
     <!-- link list -->
-    <div class="text-base inline-flex items-center gap-2 mb-2">
+    <div class="text-base inline-flex items-center gap-2 mb-1">
       {
         linkList.map((link: { name: string; link: string }) => (
           <button class="bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-700 text-zinc-800 dark:text-white font-bold py-0 px-3 border-b-4 border-gray-300 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-900 transition rounded">
