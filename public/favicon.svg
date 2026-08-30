@@ -1,3 +1,188 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Generator: visioncortex VTracer -->
-<svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" style="display: block;" viewBox="0 0 420 420"><path d="M0 0 C138.6 0 277.2 0 420 0 C420 138.6 420 277.2 420 420 C281.4 420 142.8 420 0 420 C0 281.4 0 142.8 0 0 Z " transform="translate(0,0)" style="fill: #F0F0F0;"/><path d="M0 0 C115.83 0 231.66 0 351 0 C351 69.63 351 139.26 351 211 C235.17 211 119.34 211 0 211 C0 141.37 0 71.74 0 0 Z " transform="translate(35,175)" style="fill: #D980C0;"/><path d="M0 0 C115.83 0 231.66 0 351 0 C351 23.43 351 46.86 351 71 C235.17 71 119.34 71 0 71 C0 47.57 0 24.14 0 0 Z " transform="translate(35,35)" style="fill: #D980C0;"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1024 1024"
+     width="1024"
+     height="1024"
+     role="img"
+     aria-label="cyisk">
+  <rect x="24" y="24" width="976" height="976" rx="176"
+        fill="#F7FAF8"/>
+  <path d="M345 842
+           C455 826 564 813 675 809
+           C737 807 791 811 842 823"
+        fill="none"
+        stroke="#29373B"
+        stroke-width="42"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  <path d="M672 811 L774 752"
+        fill="none"
+        stroke="#36464A"
+        stroke-width="31"
+        stroke-linecap="round"/>
+  <g transform="translate(-485 10) scale(1.35)">
+    <g id="tail">
+      <polygon points="535,455 600,476 554,573 502,638 512,531"
+               fill="#075468"/>
+      <polygon points="512,531 554,501 534,617 502,638"
+               fill="#0B6C80"/>
+      <polygon points="535,455 594,479 554,501 512,531"
+               fill="#123F4C"/>
+      <polygon points="554,501 600,476 577,539 534,617"
+               fill="#096075"/>
+    </g>
+    <g id="body">
+      <polygon points="684,256 739,255 754,298 814,345 782,430
+                       699,500 672,528 601,534 554,486 569,403"
+               fill="#C94B0D"/>
+      <polygon points="754,298 814,345 782,430 766,382"
+               fill="#D95B0F"/>
+      <polygon points="699,500 782,430 706,442 672,528"
+               fill="#A83B0D"/>
+      <polygon points="554,486 601,534 672,528 645,508 578,490"
+               fill="#EC7918"/>
+      <polygon points="554,486 578,490 601,534 543,593"
+               fill="#BE440E"/>
+      <polygon points="578,490 645,508 672,528 601,534"
+               fill="#F1831D"/>
+    </g>
+    <g id="neck">
+      <polygon points="739,255 806,225 846,226 808,249 799,270 754,298"
+               fill="#F5F6F2"/>
+      <polygon points="754,298 799,270 814,345"
+               fill="#ECEFEB"/>
+      <polygon points="739,255 777,241 806,225 754,254"
+               fill="#DCE3DF"/>
+    </g>
+    <g id="wing">
+      <polygon points="684,255 610,258 537,343 508,452
+                       506,479 478,532 598,486 711,389 754,298"
+               fill="#074758"/>
+      <polygon points="610,258 684,255 680,360 569,405 537,343"
+               fill="#0B5D71"/>
+      <polygon points="537,343 610,258 569,405 508,452"
+               fill="#0D657A"/>
+      <polygon points="684,255 754,298 711,389 680,360"
+               fill="#0A3E4B"/>
+      <polygon points="680,360 711,389 631,402 569,405"
+               fill="#0D5263"/>
+      <polygon points="610,258 684,255 569,405"
+               fill="#105468"/>
+      <polygon points="508,452 569,405 535,456 506,479"
+               fill="#347B4F"/>
+      <polygon points="478,532 506,479 535,456 515,492"
+               fill="#164A58"/>
+      <polygon points="478,532 515,492 598,486"
+               fill="#0A3C48"/>
+    </g>
+    <g id="wing-feathers">
+      <polygon points="535,456 569,405 594,403 550,469 515,492"
+               fill="#4E914D"/>
+      <polygon points="594,403 628,404 575,478 550,469"
+               fill="#397C4A"/>
+      <polygon points="628,404 672,398 610,474 575,478"
+               fill="#4C8C4D"/>
+      <polygon points="672,398 711,389 654,448 610,474"
+               fill="#0A4652"/>
+      <polygon points="515,492 550,469 575,478 541,493"
+               fill="#42884C"/>
+      <polygon points="541,493 575,478 610,474 575,489"
+               fill="#1D6670"/>
+      <polygon points="575,489 610,474 654,448 598,486"
+               fill="#30784F"/>
+      <polygon points="672,398 711,389 744,315 710,357"
+               fill="#4B8A4D"/>
+    </g>
+    <g id="shoulder">
+      <polygon points="610,258 684,255 754,298 711,389 680,360"
+               fill="#074452"/>
+      <polygon points="684,255 739,255 754,298"
+               fill="#0A3742"/>
+      <polygon points="684,255 610,258 655,218"
+               fill="#0E5E71"/>
+      <polygon points="655,218 684,255 739,255 754,210 710,226"
+               fill="#0B4E5F"/>
+    </g>
+    <g id="head">
+      <polygon points="609,258 614,212 638,145 720,116
+                       807,139 848,178 806,207 754,210 684,255"
+               fill="#075266"/>
+      <polygon points="638,145 720,116 807,139 808,171 700,184"
+               fill="#126C7D"/>
+      <polygon points="638,145 700,184 684,198 614,212"
+               fill="#0B5A6D"/>
+      <polygon points="638,145 684,198 614,212"
+               fill="#0C4859"/>
+      <polygon points="614,212 684,198 609,258"
+               fill="#073F4E"/>
+      <polygon points="700,184 808,171 806,207 754,210"
+               fill="#0A4656"/>
+      <polygon points="807,139 848,178 808,171"
+               fill="#0C404D"/>
+      <polygon points="684,198 700,184 727,182 752,210 710,227"
+               fill="#E36C14"/>
+      <polygon points="727,182 775,181 752,210"
+               fill="#EF7A17"/>
+    </g>
+    <g id="face">
+      <polygon points="684,198 710,227 684,258 609,258"
+               fill="#F5F6F2"/>
+      <polygon points="609,258 684,198 650,237"
+               fill="#E2E8E4"/>
+      <polygon points="710,227 754,210 739,255 684,258"
+               fill="#086173"/>
+      <polygon points="684,258 739,255 754,298"
+               fill="#0B4350"/>
+    </g>
+    <g id="eye">
+      <circle cx="771" cy="180" r="18" fill="#173B45"/>
+      <circle cx="770" cy="178" r="6.2" fill="#F2F3ED"/>
+      <circle cx="768.5" cy="176.5" r="1.8" fill="#FFFFFF"/>
+    </g>
+    <!-- 眼后橙色区域 -->
+    <g id="eye-stripe">
+      <polygon points="789,174 808,171 848,188 810,199"
+               fill="#CE4D0E"/>
+      <polygon points="808,171 848,178 848,188"
+               fill="#B6430D"/>
+      <polygon points="789,174 810,199 808,171"
+               fill="#F3F2EB"/>
+    </g>
+    <g id="beak">
+      <polygon points="808,199 848,188 1023,221 844,210"
+               fill="#0B5262"/>
+      <polygon points="844,210 1023,221 884,229 806,225"
+               fill="#C84A0D"/>
+      <polygon points="808,199 844,210 806,207"
+               fill="#0A404D"/>
+      <polygon points="806,207 844,210 806,225 754,210"
+               fill="#075365"/>
+      <polygon points="844,210 884,229 806,225"
+               fill="#E36A14"/>
+    </g>
+    <g id="chest">
+      <polygon points="754,298 814,345 782,430 766,383"
+               fill="#DD6210"/>
+      <polygon points="739,255 754,298 766,383 711,389"
+               fill="#C84B0C"/>
+      <polygon points="711,389 766,383 782,430
+                       706,442 672,528 645,508"
+               fill="#D9580E"/>
+      <polygon points="706,442 782,430 699,500 672,528"
+               fill="#A93B0D"/>
+      <polygon points="645,508 672,528 601,534 578,490"
+               fill="#E97217"/>
+    </g>
+  </g>
+  <g fill="none"
+     stroke="#C94D10"
+     stroke-width="18"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+    <path d="M403 705 L458 755 L438 809"/>
+    <path d="M458 755 L497 798"/>
+    <path d="M455 761 L413 797"/>
+    <path d="M451 702 L506 750 L520 801"/>
+    <path d="M506 750 L557 780"/>
+    <path d="M507 756 L476 796"/>
+  </g>
+</svg>
